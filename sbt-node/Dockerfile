@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y apt-transport-https && \
 # Install node
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt install nodejs
+RUN npm i yarn -g
 
 # Install phantomjs
 RUN wget -P /tmp https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-x86_64.tar.bz2 && \
